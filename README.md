@@ -172,7 +172,7 @@ If you like this project feel free to leave comments and contact via given autho
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-- [kimita]('https://github.com/kimitawanjohi')
+- [rein]('https://github.com/reinchemo')
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
