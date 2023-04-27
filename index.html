@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rein | Portfolio</title>
+</head>
+<body>
+    <main class="page">
+        <section class="headline">
+            <!-- mobile nav -->
+
+            <header class="navbar-sm sticky">
+                <h4>Welcome</h4>
+                <i class="fa fa-bars bars pointer" onclick="showMenu()" aria-hidden="true"></i>
+            </header>
+
+            <div id="backdrop" class="backdrop backdrop-hidden">
+            </div>
+            <div id="menu" class="mobile-menu mobile-menu-hide z-110 fixed">
+                <div class="mobile-menu-header">
+                    <img class="pointer" src="assets/Icon.png" onclick="hideMenu()" alt="close">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="mt-2">
+                            <a href="#work" onclick="hideMenu()" >Portfolio</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#about" onclick="hideMenu()" >About</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#contact " onclick="hideMenu()">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <!-- desktop nav -->
+            <header class="navbar-lg sticky">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#work">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        
+            <section class="section">
+                <div class="p-2 container">
+                    <h1 class="main-title">Hi There.I'm Reinhard</h1>
+                    <h2 class="sub-title">A software developer</h2>
+                    <p class="description"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                        don’t hestiate to contact me.
+                    </p>
+                    <div class="socials mt-2">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/reinchemo">
+                                    <img src="assets/github.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/reinhard-chemonges-15a52a216/  ">
+                                    <img src="assets/Linkedin icon.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/angellist-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="assets/twitter.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/medium.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scroll-down">
+                    <a href="#work" class="icon-btn">
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+        <!-- Work section -->
+        <section class="section" id="work">
+            <div class="container p-2">
+                <div class="work-header">  
+                    <h2 class="main-title">
+                        My Recent Works
+                    </h2>
+                    <div class="underline"></div>
+                </div>
+
+<!-- DOM MANIPULATION -->
+                <div class="row" id="works"></div>
+            </div>
+
+
+        </section>
+
+        <!-- About section -->
+        <section class="section"id="about">
+            <div class="w-full">
+                <div class="about">
+                    <img class="ill-2" src="assets/ill-mb-2.svg" alt="">
+                    <img class="ill-1" src="assets/ill-mb-1.svg" alt="">
+
+                    <img class="ill-2lg hidden" src="assets/illustration1-desktop.svg" alt="">
+                    <img class="ill-1lg hidden" src="assets/illustration-desktop.svg" alt="">
+
+                    <h2 class="main-title">
+                        About me
+                    </h2>
+                    <p class="description p-2 container">
+                        I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                    </p>
+                    <button class="about-btn">Get My Resume</button>
+                </div>
+            </div>
+
+            <div class="container">
+                
+                <div class="row">
+                    <div class="about-card">
+                        <div>
+                            <img src="assets/icon-languages.svg" alt="">
+                        </div>
+                        <h2 class="about-title">
+                            Languages
+                        </h2>
+                        <ul class="about-card-tags">
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Html</li>
+                            <li>Css</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="about-card">
+                        <div>
+                            <img src="assets/icon-frameworks.svg" alt="">
+                        </div>
+                        <h2 class="about-title">
+                            Frameworks
+                        </h2>
+                        <ul class="about-card-tags">
+                            <li>Bootstrap</li>
+                            <li>Ruby on rails</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="about-card">
+                        <div>
+                            <img src="assets/icon-skills.svg" alt="">
+                        </div>
+                        <h2 class="about-title">
+                            Skills
+                        </h2>
+                        <ul class="about-card-tags">
+                            <li>Codekit</li>
+                            <li>Github</li>
+                            <li>Codepen</li>
+                            <li>Bash</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="section" id="contact">
+            <div class="container relative">
+                <div class="lg-grid">
+                    <h2 class="main-title">
+                        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                    </h2>
+                    
+                    <form class="w-full flex justify-start flex-col mt-2" id="contact-form" action="https://formspree.io/f/xyyalaag" method="POST">
+                        <div class="flex gap-2">
+
+                            <div class="mb-2 w-full">
+                                <input type="text" name="name" maxlength="30" required id="name" class="form-control w-full" placeholder="Full name">
+                            </div>
+                        </div>
+                        <div class="mb-2 w-full">
+                            <input type="email" name="email" required id="email" class="form-control w-full" placeholder="Email Address">
+                        </div>
+                        <div class="mb-2">
+                            <textarea rows="4" cols="auto" maxlength="500" id="message" name="message" required class="form-control w-full" placeholder="Enter text here"></textarea>
+                        </div>
+                        <small></small>
+                        <div class="mb2 lg-flex">
+                            <button class="form-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full relative">
+            <div class="contact-img">
+                <img class="absolute-b-r lg-hidden" src="assets/illustration-contact-form.svg" alt="">
+                <img class="hidden absolute-b-r" src="assets/contact-right.svg" alt="">
+                <img class="hidden absolute-l-b" src="assets/contact-bottom-left.svg" alt="">
+                <img class="hidden absolute-b-l" src="assets/contact-left.svg" alt="">
+            </div>
+            <div class="socials mt-2">
+                <ul>
+                    <li>
+                        <a href="https://github.com/reinchemo">
+                            <img src="assets/github.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/reinhard-chemonges-15a52a216/">
+                            <img src="assets/Linkedin icon.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/angellist-1.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="assets/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/medium.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
